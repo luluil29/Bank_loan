@@ -15,11 +15,11 @@ Aplikasi ini memprediksi pendapatan (Income) berdasarkan:
 """)
 
 # Load model
-model_path = "model.pkl"  # Sesuaikan dengan nama file model kamu
+model_path = "regresi.pkl"  # Sesuaikan dengan nama file model kamu
 if os.path.exists(model_path):
     model = joblib.load(model_path)
 else:
-    st.error("Model belum tersedia. Pastikan file 'model.pkl' ada di direktori.")
+    st.error("Model belum tersedia. Pastikan file 'regresi.pkl' ada di direktori.")
     st.stop()
 
 # Input dari pengguna
